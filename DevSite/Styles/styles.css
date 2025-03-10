@@ -1,1 +1,85 @@
 @charset "UTF-8";
+:root {
+    --body-margin: 1%;
+    --main-radius: 10px;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	margin : var(--body-margin);
+	
+}
+nav {
+	/* Wireframe is to have band name (first div/<a>) on the left, then all site links to the right [r1] 
+  	this is achieved by only having 2 sub elements in the nav, with band as <a> and links grouped under a <div> for only 2 elements.
+  	all link sub elements will stack from the rhs (text will be centred vertically [r2])
+  */
+	background-color : black;
+	padding : 15px;
+	
+	align-items : center; /*[r2]*/
+
+	/*--- [r1]---*/
+	display : flex;
+	justify-content: space-between;
+  	position: fixed;
+  	/*------------*/
+  	font-size:20px;
+  	width:calc(100% - 2*var(--body-margin)); /* body has a margin of x% adjust dynamically*/
+  	
+  	border-radius: var(--main-radius);
+ 	
+ 	max-height: 10%;
+ }
+
+ nav a{
+ 	text-decoration: none;
+ 	color: grey; /* all links to grey, band will override to its own color even though its an a */
+}
+ nav .site-links  {
+ 	display: flex; 
+ 	gap : 20px;
+ }
+ 
+ #band-home-logo {
+ 	color: white;
+ }
+ 
+ main {
+ 	padding-top:80px;
+ 	background:green;
+ 	-webkit-background-clip: text;
+ }
+ main h1{
+ 	font-size:70px;
+ 
+ }
+ .text-with-bg {
+ 	color: white;
+ 	font-size: 15px;
+ 	background-color:black;
+ 	padding : 8px;
+ 	border-radius: 
+ 	5px;
+ }
+ 
+ .bg-placeholder {
+	 max-width:100%; /*needed to maintin crop at right hand side leaving the margin/padding set up in body else img overlayRHS margin*/
+	display:block;
+    width: calc(100% - 2*var(--body-margin));
+    /* height: 110vh; */
+    
+   
+  	background-image: url('../img/main-banner.jpg');
+    background-size: cover;
+    background-position: 80% 25%; /* Adjusts cropping area */
+    background-repeat: repeat-y; /* IF PAGE GOES BEYOND SIZE OF IMAGE REPEAT IT */
+    position: fixed;
+	z-index: -1;
+	min-height: 100%;
+	top:calc(var(--body-margin));
+}
+ 

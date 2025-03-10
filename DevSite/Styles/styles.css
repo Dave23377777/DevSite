@@ -2,6 +2,7 @@
 :root {
     --body-margin: 1%;
     --main-radius: 10px;
+    --main-padding : 8px;
 }
 * {
 	box-sizing: border-box;
@@ -27,17 +28,22 @@ nav {
 	justify-content: space-between;
   	position: fixed;
   	/*------------*/
-  	font-size:20px;
+  	font-size:25px;
   	width:calc(100% - 2*var(--body-margin)); /* body has a margin of x% adjust dynamically*/
   	
   	border-radius: var(--main-radius);
  	
- 	max-height: 10%;
+ 	max-height: 15%;
  }
 
  nav a{
  	text-decoration: none;
  	color: grey; /* all links to grey, band will override to its own color even though its an a */
+ 	
+}
+
+nav a:hover {
+    color: #FFD700;
 }
  nav .site-links  {
  	display: flex; 
@@ -61,9 +67,8 @@ nav {
  	color: white;
  	font-size: 15px;
  	background-color:black;
- 	padding : 8px;
- 	border-radius: 
- 	5px;
+ 	padding : var(--main-padding);
+ 	border-radius: 5px;
  }
  
  .bg-placeholder {
@@ -79,7 +84,7 @@ nav {
     background-repeat: repeat-y; /* IF PAGE GOES BEYOND SIZE OF IMAGE REPEAT IT */
     position: fixed;
 	z-index: -1;
-	min-height: 100%;
+	min-height: 100vh;
 	top:calc(var(--body-margin));
 }
  

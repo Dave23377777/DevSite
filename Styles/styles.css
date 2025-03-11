@@ -56,7 +56,7 @@ body {
  .menuBar a{
  	text-decoration: none;
  	color: grey; /* all links to grey, band will override to its own color even though its an a */
- 	
+ 	font-size:35px;
 }
 
 .menuBar a:hover {
@@ -111,7 +111,7 @@ body {
  	flex-direction:row;
  	 width: 100%;
  	 gap : 0px;
- 	 align-items: bottom;
+ 	 align-items: center;
  	 justify-content:flext-start;
  	 margin:0px;
  }
@@ -119,6 +119,19 @@ body {
  .left {
  flex:3;
  margin:0px;
+ 
+ 
+ }
+ small {
+    vertical-align: baseline;
+}
+ .left h3{
+  font-size:25px;
+ 	display:flex;
+ felx-direction:column;
+ 
+ justify-content:center;
+ align-items: baseline;
  
  }
  .right{
@@ -163,7 +176,8 @@ body {
  	background-color:black;
  	padding : calc(var(--main-padding));
  	
- 	max-width:85%;
+ 	max-width:95%;
+ 	width:95%;
  	display: flex;
   justify-content: center; 
   align-items: center;
@@ -190,7 +204,7 @@ body {
   padding : var(--main-padding);
   margin: var(--main-margin);
  	color: white;
- 	font-size: 35px;
+ 	
  	background-color:black;
  	padding : calc(var(--main-padding));
  	

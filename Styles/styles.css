@@ -11,6 +11,7 @@
     --brown : #B09398;
     --rose : #653239;
     --celadon : #A4D4B4;
+    --blue: #D6EEFF;
 }
 * {
 	box-sizing: border-box;
@@ -86,9 +87,18 @@ body {
  	
  	
  }
+ 
+ main.sam{
+ padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 70px ) 0px 0px 0px;
+ 		max-width:120%;
+ 		 width:calc(100% - 2*var(--body-margin) - (var(--main-padding)));
+}
  main h1{
  	font-size:70px;
- 
+ 	 display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 0px;
+ 	
  }
  
  /*-------------------------------*/
@@ -124,16 +134,25 @@ body {
  }
  .band-with-bg {
  	color: white;
- 	font-size: 15px;
+ 	font-size: 40px;
  	background-color:black;
- 	padding : calc(var(--main-padding) + 15px);
+ 	padding : calc(var(--main-padding));
+ 	
+ 	max-width:85%;
+ 	display: flex;
+  justify-content: center; 
+  align-items: center;
+  	
  }
  
  .band-with-bg.sam,.band-with-bg.tag{
  	padding : var(--main-padding);
+ 	justify-content: left;
+ 	padding-left: 4%;
+ 	 vertical-align: baseline; /* <small>with</> looked stupid without this */ 
  }
  .band-with-bg.tag{
- 	font-size:10px;
+ 	font-size:25px;
  }
  
  
@@ -142,6 +161,44 @@ body {
  	
  }
  
+  .sam-big-name {
+ 	color: white;
+ 	font-size: 35px;
+ 	background-color:black;
+ 	padding : calc(var(--main-padding));
+ 	
+ 	max-width:100%;
+ 	display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color:var(--brown);
+ 		color:black;
+  	border-radius : var(--main-radius);
+ }
+ 
+ 
+ .sam-header{
+ 	padding : var(--main-padding);
+ 	justify-content: center;
+ 	
+ }
+ h3.sam-brief{
+ 	padding : var(--main-padding);
+ 	justify-content:center ;
+ 	background-color:var(--blue);
+ 	color:black;
+ 	border-radius : var(--main-radius);
+ 	display: flex;
+  justify-content: center; 
+  align-items: center;
+  max-width:65%;
+ 	
+ }
+ .sam-brief.book-now{
+ 	color:white;
+ 	background-color:var(--rose);
+ 
+ }
  .bg-placeholder {
 	 max-width:calc(100%-var(--main-padding) - 2*var(--body-margin)); /*needed to maintin crop at right hand side leaving the margin/padding set up in body else img overlayRHS margin*/
 	 width:calc(100% - 2*var(--body-margin) - (var(--main-padding)));

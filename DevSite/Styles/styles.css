@@ -4,6 +4,7 @@
     --body-margin-full: 5px 5px 5px 5px;
     --main-radius: 10px;
     --main-padding : 8px;
+    --main-margin : calc(2*var(--body-margin));
 }
 * {
 	box-sizing: border-box;
@@ -36,6 +37,8 @@ nav {
   	border-radius: var(--main-radius);
  	
  	max-height: 15%;
+ 	height:100px
+ 	
  }
 
  nav a{
@@ -71,6 +74,7 @@ nav a:hover {
  	background-color:black;
  	padding : var(--main-padding);
  	border-radius: 5px;
+ 	margin :var(--main-margin); /* effectively triple body-margin from edge, since already starting at margin through body start) */
  }
  
  .bg-placeholder {
@@ -89,7 +93,7 @@ nav a:hover {
     position: fixed;
 	z-index: -1;
 	min-height: 100vh;
-	height:100%;
+	height:120%;
 	top:calc(var(--body-margin));
 	
 	border-radius: var(--main-radius);

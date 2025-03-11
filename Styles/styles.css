@@ -157,7 +157,7 @@ body {
     background-size: cover;
     position: fixed;
 	z-index: -1;
-	min-height: 100vh;
+	min-height: 120vh;
 	height:120%;
 	top:calc(var(--body-margin));
 	

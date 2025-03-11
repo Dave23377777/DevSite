@@ -7,6 +7,10 @@
     --main-radius: 10px;
     --main-padding : 8px;
     --main-margin : calc(2*var(--body-margin));
+    --carrib : #037171;
+    --brown : #B09398;
+    --rose : #653239;
+    --celadon : #A4D4B4;
 }
 * {
 	box-sizing: border-box;
@@ -16,6 +20,9 @@ body {
 	font-family: "Open Sans", sans-serif;
 	margin : var(--body-margin-full);
 	  
+	
+}
+.para3{
 	
 }
 .menuBar{
@@ -83,14 +90,46 @@ body {
  	font-size:70px;
  
  }
- .text-with-bg {
+ 
+ /*-------------------------------*/
+ /*-- common margins and pdding --*/
+ /*-------------------------------*/
+ .para1,.band-with-bg,.para2,.para3,.para4,.para5 {
+ 	border-radius: var(--main-radius);
+ 	padding : var(--main-padding);
+ }
+ 
+ .para1 {
+ 	background-color:#037171;
+ 	color:white;
+ 	
+ }
+ .para2{
+ 		background-color:var(--carrib);
+ 		color:white;
+ }
+ .para3{
+ background-color:var(--brown);
+ 		color:black;
+ }
+ 
+ .para4{
+ background-color:var(--rose);
+ 		color:white;
+ }
+ 
+  .para5{
+ background-color:var(--celadon);
+ 		color:black;
+ }
+ .band-with-bg {
  	color: white;
  	font-size: 15px;
  	background-color:black;
- 	padding : var(--main-padding);
- 	border-radius: 5px;
+ }
+ .band-description{
  	margin :var(--main-margin);
- 	max-width;
+ 	
  }
  
  .bg-placeholder {

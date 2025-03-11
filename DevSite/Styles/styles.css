@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
-    --body-margin: 1%;
+    --body-margin: 5px;
+    --body-margin-full: 5px 5px 5px 5px;
     --main-radius: 10px;
     --main-padding : 8px;
 }
@@ -10,7 +11,8 @@
 
 body {
 	font-family: "Open Sans", sans-serif;
-	margin : var(--body-margin);
+	margin : var(--body-margin-full);
+	  
 	
 }
 nav {
@@ -29,7 +31,7 @@ nav {
   	position: fixed;
   	/*------------*/
   	font-size:25px;
-  	width:calc(100% - 2*var(--body-margin)); /* body has a margin of x% adjust dynamically*/
+  	width:calc(100% - (2*var(--body-margin)) - (var(--main-padding)) ); /* body has a margin of x% adjust dynamically*/
   	
   	border-radius: var(--main-radius);
  	
@@ -72,19 +74,22 @@ nav a:hover {
  }
  
  .bg-placeholder {
-	 max-width:100%; /*needed to maintin crop at right hand side leaving the margin/padding set up in body else img overlayRHS margin*/
+	 
+	 width:calc(100% - 2*var(--body-margin) - (var(--main-padding)));
 	display:block;
-    width: calc(100% - 2*var(--body-margin));
+    
     /* height: 110vh; */
     
    
   	background-image: url('../img/main-banner.jpg');
-    background-size: cover;
+    
     background-position: 80% 25%; /* Adjusts cropping area */
     background-repeat: repeat-y; /* IF PAGE GOES BEYOND SIZE OF IMAGE REPEAT IT */
     position: fixed;
 	z-index: -1;
 	min-height: 100vh;
 	top:calc(var(--body-margin));
+	
+	border-radius: var(--main-radius);
 }
  

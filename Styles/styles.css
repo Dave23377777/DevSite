@@ -126,7 +126,17 @@ body {
  	color: white;
  	font-size: 15px;
  	background-color:black;
+ 	padding : calc(var(--main-padding) + 15px);
  }
+ 
+ .band-with-bg.sam,.band-with-bg.tag{
+ 	padding : var(--main-padding);
+ }
+ .band-with-bg.tag{
+ 	font-size:10px;
+ }
+ 
+ 
  .band-description{
  	margin :var(--main-margin);
  	

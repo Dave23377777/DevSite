@@ -51,13 +51,22 @@ body {
  	
 }
 
-nav a:hover {
+.menuBar a:hover {
     color: #FFD700;
 }
 .menuBar .site-links  {
  	display: flex; 
  	gap : 20px;
  }
+ 
+ .extra {
+  
+  
+  }
+  
+ #moreLink:hover + .menuBar {
+    display: block;
+}
  
  #band-home-logo {
  	color: white;
@@ -66,6 +75,7 @@ nav a:hover {
  main {
  	padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 70px ) 0px 0px 0px;
  	
+ 	max-width:65%;
  	
  	
  }
@@ -80,6 +90,7 @@ nav a:hover {
  	padding : var(--main-padding);
  	border-radius: 5px;
  	margin :var(--main-margin);
+ 	max-width;
  }
  
  .bg-placeholder {
@@ -92,7 +103,7 @@ nav a:hover {
    
   	background-image: url('../img/main-banner.jpg');
     
-    background-position: 80% 25%; /* Adjusts cropping area */
+    background-position: 78% 25%; /* Adjusts cropping area */
     /* IF PAGE GOES BEYOND SIZE OF IMAGE REPEAT IT */
     background-size: cover;
     position: fixed;

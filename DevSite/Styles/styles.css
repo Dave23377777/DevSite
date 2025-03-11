@@ -1,6 +1,8 @@
 @charset "UTF-8";
 :root {
     --body-margin: 5px;
+    --menu-font-size : 30px;
+    --menu-padding : 15px;
     --body-margin-full: 5px 5px 5px 5px;
     --main-radius: 10px;
     --main-padding : 8px;
@@ -16,13 +18,14 @@ body {
 	  
 	
 }
-nav {
+.menuBar{
+	opacity: 0.9;
 	/* Wireframe is to have band name (first div/<a>) on the left, then all site links to the right [r1] 
   	this is achieved by only having 2 sub elements in the nav, with band as <a> and links grouped under a <div> for only 2 elements.
   	all link sub elements will stack from the rhs (text will be centred vertically [r2])
   */
 	background-color : black;
-	padding : 15px;
+	padding : var(--menu-padding);
 	
 	align-items : center; /*[r2]*/
 
@@ -31,17 +34,18 @@ nav {
 	justify-content: space-between;
   	position: fixed;
   	/*------------*/
-  	font-size:25px;
+  	font-size:var(--menu-font-size);
+  	
+  	
   	width:calc(100% - (2*var(--body-margin)) - (var(--main-padding)) ); /* body has a margin of x% adjust dynamically*/
   	
   	border-radius: var(--main-radius);
  	
- 	max-height: 15%;
- 	height:100px
+ 	
  	
  }
 
- nav a{
+ .menuBar a{
  	text-decoration: none;
  	color: grey; /* all links to grey, band will override to its own color even though its an a */
  	
@@ -50,7 +54,7 @@ nav {
 nav a:hover {
     color: #FFD700;
 }
- nav .site-links  {
+.menuBar .site-links  {
  	display: flex; 
  	gap : 20px;
  }
@@ -60,9 +64,10 @@ nav a:hover {
  }
  
  main {
- 	padding-top:80px;
- 	background:green;
- 	-webkit-background-clip: text;
+ 	padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 70px ) 0px 0px 0px;
+ 	
+ 	
+ 	
  }
  main h1{
  	font-size:70px;
@@ -74,7 +79,7 @@ nav a:hover {
  	background-color:black;
  	padding : var(--main-padding);
  	border-radius: 5px;
- 	margin :var(--main-margin); /* effectively triple body-margin from edge, since already starting at margin through body start) */
+ 	margin :var(--main-margin);
  }
  
  .bg-placeholder {

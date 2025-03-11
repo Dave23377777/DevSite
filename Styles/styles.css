@@ -96,7 +96,7 @@ body {
  /*-------------------------------*/
  .para1,.band-with-bg,.para2,.para3,.para4,.para5 {
  	border-radius: var(--main-radius);
- 	padding : var(--main-padding);
+ 	padding : calc(var(--main-padding) + 10px);
  }
  
  .para1 {

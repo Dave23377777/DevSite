@@ -98,6 +98,14 @@ body {
  padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 70px ) 0px 0px 0px;
  
  }
+ 
+ @media (min-width: 1025px) {
+  .sam-description{
+    max-width:65%; /* Adjust font size for larger screens */
+  }
+}
+
+
  main.sam{
  
  		max-width:120%;
@@ -153,6 +161,7 @@ body {
  .para1 {
  	background-color:#037171;
  	color:white;
+ 	opacity:85%;
  	
  }
  .para2{

@@ -84,23 +84,48 @@ body {
  	padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 70px ) 0px 0px 0px;
  	
  	max-width:65%;
- 	
- 	
  }
  
  main.sam{
- padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 70px ) 0px 0px 0px;
+ 	max-width :100%;
+ }
+ 
+ .long-sam-description{
+ 	max-width:65%;
+ }
+ 
+ .sam-description{
+ padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 70px ) 0px 0px 0px;}
+ main.sam{
+ 
  		max-width:120%;
  		 width:calc(100% - 2*var(--body-margin) - (var(--main-padding)));
 }
  main h1{
  	font-size:70px;
- 	 display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 0px;
+ 	
  	
  }
+ .head-box{
+ 	display:flex;
+ 	flex-direction:row;
+ 	 width: 100%;
+ 	 gap : 0px;
+ 	 align-items: bottom;
+ 	 justify-content:flext-start;
+ 	 margin:0px;
+ }
  
+ .left {
+ flex:1.5;
+ margin:0px;
+ 
+ }
+ .right{
+ 	
+	 flex:1;
+ 
+ 	}
  /*-------------------------------*/
  /*-- common margins and pdding --*/
  /*-------------------------------*/
@@ -162,6 +187,8 @@ body {
  }
  
   .sam-big-name {
+  padding : var(--main-padding);
+  margin: var(--main-margin);
  	color: white;
  	font-size: 35px;
  	background-color:black;
@@ -183,15 +210,12 @@ body {
  	
  }
  h3.sam-brief{
- 	padding : var(--main-padding);
- 	justify-content:center ;
+ 	padding:var(--main-padding);
+ 	
+ 	margin:var(--main-margin);
  	background-color:var(--blue);
  	color:black;
  	border-radius : var(--main-radius);
- 	display: flex;
-  justify-content: center; 
-  align-items: center;
-  max-width:65%;
  	
  }
  .sam-brief.book-now{

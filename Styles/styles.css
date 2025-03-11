@@ -96,15 +96,10 @@ body {
  
  .sam-description{
  padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 70px ) 0px 0px 0px;
- 
+ 	text-align:center;
  }
  
- @media (min-width: 1025px) {
-  .sam-description{
-    max-width:65%; /* Adjust font size for larger screens */
-  }
-}
-
+ 
 
  main.sam{
  
@@ -264,7 +259,7 @@ body {
  	background-color:var(--blue);
  	color:black;
  	border-radius : var(--main-radius);
- 	
+ 	text-align:center;
  }
  .sam-brief.book-now{
  	color:white;
@@ -291,5 +286,11 @@ body {
 	top:calc(var(--body-margin));
 	
 	border-radius: var(--main-radius);
+}
+ 
+ @media (min-width: 1024px) {
+  .sam-description,.product-box{
+    max-width:65%; /* Adjust font size for larger screens */
+  }
 }
  

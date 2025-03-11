@@ -74,7 +74,7 @@ nav a:hover {
  }
  
  .bg-placeholder {
-	 
+	 max-width:calc(100%-var(--main-padding) - 2*var(--body-margin)); /*needed to maintin crop at right hand side leaving the margin/padding set up in body else img overlayRHS margin*/
 	 width:calc(100% - 2*var(--body-margin) - (var(--main-padding)));
 	display:block;
     
@@ -84,10 +84,12 @@ nav a:hover {
   	background-image: url('../img/main-banner.jpg');
     
     background-position: 80% 25%; /* Adjusts cropping area */
-    background-repeat: repeat-y; /* IF PAGE GOES BEYOND SIZE OF IMAGE REPEAT IT */
+    /* IF PAGE GOES BEYOND SIZE OF IMAGE REPEAT IT */
+    background-size: cover;
     position: fixed;
 	z-index: -1;
 	min-height: 100vh;
+	height:100%;
 	top:calc(var(--body-margin));
 	
 	border-radius: var(--main-radius);

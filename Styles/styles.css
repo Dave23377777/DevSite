@@ -17,6 +17,19 @@
 	box-sizing: border-box;
 }
 
+.img-box{
+	position:relative;
+	text-align:center;
+	color:grey;
+}
+
+.center-bottom{
+	position:absolute;
+	bottom:8px;
+	text-align:center;
+	font-size:1.5vh;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
 	margin : var(--body-margin-full);

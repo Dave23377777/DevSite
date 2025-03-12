@@ -79,13 +79,27 @@ body {
  #band-home-logo {
  	color: white;
  }
+ .home-header-band{
+ 	padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 5vh ) 0px 0px 0px;
+ 	
+ }
  
+ .home-header-band h1 {
+ 	padding:0px 0px 0px 0px;
+ 	margin:0px;
+ 	display:flex;
+ 	flex-direction:column;
+ 	gap:0vh;
+ }
  main {
- 	padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 70px ) 0px 0px 0px;
+ 	padding:calc(var(--menu-font-size) + (var(--menu-padding)) + 10px ) 0px 0px 0px;
  	
  	max-width:65%;
  }
  
+.home-header-band h1 span {
+    align-self: flex-start; /* Prevents full-width stretching */
+}
  main.sam{
  	max-width :100%;
  }
@@ -145,7 +159,7 @@ body {
  /*-------------------------------*/
  /*-- common margins and pdding --*/
  /*-------------------------------*/
- .para1,.band-with-bg,.para2,.para3,.para4,.para5 {
+ .para1,.band-txt,.para2,.para3,.para4,.para5 {
  	border-radius: var(--main-radius);
  	padding : calc(var(--main-padding) + 10px);
  	margin: var(--main-margin);
@@ -175,27 +189,21 @@ body {
  background-color:var(--celadon);
  		color:black;
  }
- .band-with-bg {
+ .band-txt {
  	color: white;
- 	font-size: 5vh;
+ 	font-size: 6vh;
  	background-color:black;
  	padding : calc(var(--main-padding));
  	
- 	max-width:95%;
- 	width:95%;
- 	display: flex;
-  justify-content: center; 
-  align-items: center;
-  	
+ 	margin:0.25vh;
+ 	
+  	 vertical-align: baseline;
  }
  
- .band-with-bg.sam,.band-with-bg.tag{
- 	padding : var(--main-padding);
- 	justify-content: left;
- 	padding-left: 4%;
- 	 vertical-align: baseline; /* <small>with</> looked stupid without this */ 
+ .band-txt.sam,.band-txt.tag{
+ 	 font-size: 2.5vh; 
  }
- .band-with-bg.tag{
+ .band-txt.tag{
  	font-size:2vh;
  }
  

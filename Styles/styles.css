@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root {
     --body-margin: 5px;
-    --menu-font-size : 30px;
+    --menu-font-size : 2vh;
     --menu-padding : 15px;
     --body-margin-full: 5px 5px 5px 5px;
     --main-radius: 10px;
@@ -56,7 +56,7 @@ body {
  .menuBar a{
  	text-decoration: none;
  	color: grey; /* all links to grey, band will override to its own color even though its an a */
- 	font-size:35px;
+ 	font-size:var(--menu-font-size);
 }
 
 .menuBar a:hover {
@@ -107,7 +107,7 @@ body {
  		 width:calc(100% - 2*var(--body-margin) - (var(--main-padding)));
 }
  main h1{
- 	font-size:70px;
+ 	font-size:20vh;
  	
  	
  }
@@ -122,7 +122,7 @@ body {
  }
  
  .left {
- flex:3;
+ flex:2;
  margin:0px;
  
  
@@ -131,7 +131,7 @@ body {
     vertical-align: baseline;
 }
  .left h3{
-  font-size:25px;
+  font-size:2vh;
  	display:flex;
  felx-direction:column;
  
@@ -179,7 +179,7 @@ body {
  }
  .band-with-bg {
  	color: white;
- 	font-size: 40px;
+ 	font-size: 5vh;
  	background-color:black;
  	padding : calc(var(--main-padding));
  	
@@ -198,7 +198,7 @@ body {
  	 vertical-align: baseline; /* <small>with</> looked stupid without this */ 
  }
  .band-with-bg.tag{
- 	font-size:25px;
+ 	font-size:2vh;
  }
  
  
@@ -211,7 +211,7 @@ body {
   padding : var(--main-padding);
   margin: var(--main-margin);
  	color: white;
- 	
+ 	font-size:5vh;
  	background-color:black;
  	padding : calc(var(--main-padding));
  	
@@ -236,15 +236,15 @@ body {
  
   flex: 1 1 calc(33.33% - 40px);
   display:flex;
- 	max-width:33%;
+ 	max-width:28%;
  	margin:var(--main-margin);
  	
  	padding:3%;
- 	font-size:40px;
+ 	font-size:2vh;
  	justify-content:center;
  	background-color:white;
  	text-align:center;
- 	border-radius:30px;
+ 	border-radius:15px;
  }
  
  .sam-header{

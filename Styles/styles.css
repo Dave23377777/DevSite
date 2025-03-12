@@ -236,18 +236,19 @@ body {
  	max-width:100%; /* of cotnainer which will be resticted to tygake global margins */
  	width:100%;
  	justify-content:center;
+ 	text-align:center;
  	
  }
  
  .product{
  
-  flex: 1 1 calc(33.33% - 40px);
+  flex: 1 1 calc(33.33% - 40px); /* allow growq(1) allow shrink(1) and width aprox 33% -40px for margin. */ 
   display:flex;
  	max-width:28%;
  	margin:2vw;
- 	width:28%;
  	padding:3%;
  	font-size:2vh;
+ 	align-items:center;
  	justify-content:center;
  	background-color:white;
  	text-align:center;

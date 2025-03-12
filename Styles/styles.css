@@ -115,15 +115,14 @@ body {
  	display:flex;
  	flex-direction:row;
  	 width: 100%;
- 	 gap : 0px;
+ 	 gap : 5px;
  	 align-items: center;
  	 justify-content:flext-start;
- 	 margin:0px;
+ 	 
  }
  
  .left {
- flex:2;
- margin:0px;
+ flex:1;
  
  
  }
@@ -131,7 +130,6 @@ body {
     vertical-align: baseline;
 }
  .left h3{
-  font-size:2vh;
  	display:flex;
  felx-direction:column;
  
@@ -229,6 +227,7 @@ body {
  	flex-wrap:wrap; /* stack by row, product will take 1/3 w*/
  	max-width:100%; /* of cotnainer which will be resticted to tygake global margins */
  	width:100%;
+ 	width:100%;
  	gap: 10px;
  }
  
@@ -236,9 +235,9 @@ body {
  
   flex: 1 1 calc(33.33% - 40px);
   display:flex;
- 	max-width:28%;
+ 	max-width:33%;
  	margin:var(--main-margin);
- 	
+ 	width:28%;
  	padding:3%;
  	font-size:2vh;
  	justify-content:center;
@@ -260,6 +259,7 @@ body {
  	color:black;
  	border-radius : var(--main-radius);
  	text-align:center;
+ 	font-size:1.5vh;
  }
  .sam-brief.book-now{
  	color:white;
